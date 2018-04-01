@@ -2,18 +2,23 @@ PATH
   remote: .
   specs:
     ip2asn (0.1.0)
+      rest-client (~> 1.7.3)
       unirest
 
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.8)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     diff-lcs (1.3)
-    json (1.8.6)
-    mime-types (1.25.1)
+    json (2.1.0)
+    mime-types (2.99.3)
+    netrc (0.11.0)
+    public_suffix (3.0.2)
     rake (10.5.0)
-    rest-client (1.6.9)
-      mime-types (~> 1.16)
+    rest-client (1.7.3)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -27,10 +32,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    unirest (1.1.2)
-      addressable (~> 2.3.5)
-      json (~> 1.8.1)
-      rest-client (~> 1.6.7)
+    unirest (1.0.8)
+      addressable
+      json
+      rest-client
 
 PLATFORMS
   ruby
