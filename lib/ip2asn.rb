@@ -7,8 +7,7 @@ module IP2ASN
   def self.check(ip_address, json: false)
     resp = Unirest.get URL + ip_address
     if resp.code != 200
-      raise resp.body['error'] if resp.body.key?('error')
-      raise resp
+      raise resp.body
     end
     return resp.body unless json
     return resp.raw_body
