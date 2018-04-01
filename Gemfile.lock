@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ip2asn (1.0.0)
+    ip2asn (1.0.1)
       rest-client (~> 1.7.3)
       unirest
 
